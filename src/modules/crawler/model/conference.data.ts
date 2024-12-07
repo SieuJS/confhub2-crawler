@@ -14,7 +14,6 @@ export class ConferenceData {
     @ApiProperty({ description: 'Conference acronym', example: 'CITA' })
     public readonly acronym: string  | null;
 
-
     public constructor(entity: Conference) {
         this.id = entity.id;
         this.name = entity.name as string;
